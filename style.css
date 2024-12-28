@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playwrite+NL+Guides&family=Playwrite+US+Trad+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    background: #4e54c8;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #8f94fb, #4e54c8);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #8f94fb, #4e54c8); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #333;
+    line-height: 1.6;
+}
+
+body.dark-mode {
+    background: #021f41;  /* solid color fallback */
+    background: -webkit-linear-gradient(to right, #021f41, #0A1828);
+    background: linear-gradient(to right, #021f41, #0d1e32);
+    color: #ffffff;
+
+}
+
+body.dark-mode #wrapper {
+    background-color: #0A1828;
+}
+
+#wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#page-banner {
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
+    box-shadow: 0 4px 15px rgba(23, 133, 130, 0.3);
+    border: 2px solid rgba(191, 161, 129, 0.1);
+
+    
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+#page-banner h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#page-banner p {
+    font-size: 1.2em;
+}
+
+.genre {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-movies {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: 100px;
+    
+}
+
+/* Movie List */
+#movie-list {
+    margin: 20px 0;
+}
+
+#movie-list h2 {
+    font-size: 2em;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#movie-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#movie-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#movie-list li .name {
+    font-size: 1.1em;
+    font-weight: bold;
+    flex: 1;
+    color: #121212;
+}
+
+#movie-list li .genre {
+    font-size: 0.9em;
+    color: #666;
+}
+
+#movie-list li .buttons {
+    display: flex;
+    gap: 6px;
+}
+
+#movie-list li .edit,
+#movie-list li .delete {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 5px 15px;
+    border-radius: 10px;
+    margin: 2px;
+    transition: background-color 0.3s;
+}
+
+#movie-list li .edit {
+    color: #fff;
+    background-color: #007bff;
+}
+
+#movie-list li .edit:hover {
+    background-color: #0155af;
+    transform: scale(1.05);
+        transition: transform 0.2s ease;
+    
+}
+
+#movie-list li .delete {
+    color: #fff;
+    background-color: #FF0000;
+        transform: scale(1.05);
+        transition: transform 0.2s ease;
+}
+
+#movie-list li .delete:hover {
+    background-color: #CC0000;
+}
+
+/* Add Movie Form */
+/* Adjusting the form for genre selection */
+#add-movie {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 700px; /* Restrict the width */
+}
+
+#add-movie input[type="text"] {
+    flex: 2; /* Adjust proportionally to the button */
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+#add-movie input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#add-movie select {
+    flex: 1; /* Adjust size relative to input */
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
+}
+
+#add-movie select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#add-movie button {
+    flex: 1; /* Align with select */
+    padding: 10px;
+    font-size: 1em;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#add-movie button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+#add-movie button:active {
+    transform: scale(0.95);
+}
+
+/* Dark/Light Mode Toggle Button */
+#theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #08213b;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s, background 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #ffffff;
+}
+
+#theme-toggle:hover {
+    background: linear-gradient(135deg, #126e6b, #ab8e6d);
+    transform: scale(1.1);
+    color: #121212;
+}
+
+#theme-toggle:active {
+    transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #add-movie {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #add-movie select,
+    #add-movie button {
+        width: 100%;
+    }
+
+    #theme-toggle {
+        width: 40px;
+        height: 40px;
+        top: 10px;
+        right: 10px;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    #add-movie {
+        padding: 10px;
+    }
+
+    #theme-toggle {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
+    }
+}
+
+/* Ensure proper scaling on different devices */
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
+}
+
+/* Handle viewport height on mobile devices */
+@media screen and (max-height: 600px) {
+    body {
+        min-height: 100vh;
+    }
+}
+
+/* Improve touch targets on mobile */
+@media (hover: none) and (pointer: coarse) {
+    #add-movie button,
+    #theme-toggle {
+        padding: 12px;
+    }
+    
+    select {
+        height: 44px;
+    }
+}
