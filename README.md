@@ -64,36 +64,3 @@ Use the search bar to find specific movies in the list.
 
 Toggle between light and dark themes using the theme toggle button.
 
-Project Structure
-plaintext
-cinema-time/
-│
-├── images/                 # Contains images for the website
-│   ├── logo.png
-│   └── ...
-│
-├── css/
-│   ├── style.css           # Custom CSS for styling
-│
-├── js/
-│   ├── app.js              # Custom JavaScript for interactivity
-│
-├── index.html              # Main HTML file
-├── README.md               # Project README file
-└── LICENSE                 # License file (optional)
-Contributing
-Fork the repository.
-
-Create a new branch for your feature or bug fix:
-
-bash
-git checkout -b feature-name
-Commit your changes:
-
-bash
-git commit -m "Add a brief message describing your changes"
-Push to the branch:
-
-bash
-git push origin feature-name
-Open a pull request and describe the changes in detail.
