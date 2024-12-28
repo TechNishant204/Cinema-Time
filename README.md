@@ -10,11 +10,11 @@
 - **Search Movies**: Users can search for movies in the list.
 - **Dark Mode**: Toggle between light and dark themes for better accessibility, with theme-specific images.
 
-## Screenshots
-### Light Mode
+
+## Light Mode
 <img src="Screenshot 2024-12-28 141335.png" alt="light mode">
-Screenshot 2024-12-28 141654.png
-### Dark Mode
+
+## Dark Mode
 <img src="Screenshot 2024-12-28 141654.png" alt="Dark mode">
 
 ## Technologies Used
