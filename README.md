@@ -12,7 +12,7 @@
 
 ## Screenshots
 ### Light Mode
-![(Screenshot2024-12-28141335.png)]
+<img src="Screenshot2024-12-28141335.png" alt="lightmode">
 
 ### Dark Mode
 ![Dark Mode](images/dark-mode.png)
