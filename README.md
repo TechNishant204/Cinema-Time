@@ -13,9 +13,9 @@
 ## Screenshots
 ### Light Mode
 <img src="Screenshot 2024-12-28 141335.png" alt="light mode">
-
+Screenshot 2024-12-28 141654.png
 ### Dark Mode
-![Dark Mode](images/dark-mode.png)
+<img src="Screenshot 2024-12-28 141654.png" alt="Dark mode">
 
 ## Technologies Used
 - **HTML5**: Markup language for structuring the web page.
