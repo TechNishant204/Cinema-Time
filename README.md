@@ -12,7 +12,7 @@
 
 ## Screenshots
 ### Light Mode
-[![Light Mode](Cinema-Time/Screenshot2024-12-28141335.png)
+![Light Mode](Screenshot2024-12-28141335.png)
 
 ### Dark Mode
 ![Dark Mode](images/dark-mode.png)
