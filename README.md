@@ -12,7 +12,7 @@
 
 ## Screenshots
 ### Light Mode
-![Light Mode](images/light-mode.png)
+![Light Mode]([https://github.com/TechNishant204/Cinema-Time/blob/master/Screenshot%202024-12-28%20141335.png])
 
 ### Dark Mode
 ![Dark Mode](images/dark-mode.png)
