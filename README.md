@@ -10,6 +10,8 @@
 - **Search Movies**: Users can search for movies in the list.
 - **Dark Mode**: Toggle between light and dark themes for better accessibility, with theme-specific images.
 
+  ###Live: <a href="https://chimerical-cendol-7e0b38.netlify.app/">Watch Cinema Time</a>
+
 
 ## Light Mode
 <img src="Screenshot 2024-12-28 141335.png" alt="light mode">
