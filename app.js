@@ -16,12 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
         const li = document.createElement('li');
         li.innerHTML = `
             <span class ="name">${name}</span>
-            <select class="genre">
-                <option value="action" ${genre === 'action' ? 'selected' : ''}>Action</option>
-                <option value="comedy" ${genre === 'comedy' ? 'selected' : ''}>Comedy</option>
-                <option value="drama" ${genre === 'drama' ? 'selected' : ''}>Drama</option>
+            <select class="genre">                   
+                <option value="action" ${genre === 'Action' ? 'selected' : ''}>Action</option>
+                <option value="comedy" ${genre === 'Comedy' ? 'selected' : ''}>Comedy</option>
+                <option value="comedy" ${genre === 'Documentary' ? 'selected' : ''}>Documentary</option>
+                <option value="drama" ${genre === 'Thriller' ? 'selected' : ''}>Thriller</option>
                 <option value="horror" ${genre === 'horror' ? 'selected' : ''}>Horror</option>
                 <option value="romance" ${genre === 'romance' ? 'selected' : ''}>Romance</option>
+                <option value="romance" ${genre === 'Crime' ? 'selected' : ''}>Crime</option>
             </select>
             <div class="buttons">
                 <span class="delete">Delete</span>
