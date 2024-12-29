@@ -3,6 +3,21 @@ document.addEventListener("DOMContentLoaded", function () {
     const forms = document.forms;
     let movieArray = JSON.parse(localStorage.getItem('movies')) || [];
 
+            list.addEventListener('change', function(e) {
+            if (e.target.classList.contains('genre')) {
+                const li = e.target.parentElement;
+                const movieName = li.querySelector('.name').textContent;
+                const newGenre = e.target.value;
+                
+                // Update the movie array with new genre
+                const movieIndex = movieArray.findIndex(movie => movie.name === movieName);
+                if (movieIndex !== -1) {
+                    movieArray[movieIndex].genre = newGenre;
+                    saveMovies();
+                }
+            }
+        })
+
     function saveMovies() {
         localStorage.setItem('movies', JSON.stringify(movieArray));
     }
